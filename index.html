@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/flick/jquery-ui.css" />
+    <title>Rakuten Test</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="form-wrap">
+            <form action="" id="main" method="post" novalidate>
+                <h2>Personal information</h2>
+
+                <div class="form-group">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="firstName" id="firstName" minlength="3" placeholder="Your name"
+                        data-type="name" required />
+                </div>
+
+                <div class="form-group">
+                    <label for="last-name">Surname</label>
+                    <input type="text" name="lastName" id="lastName" minlength="3" placeholder="Your surname"
+                        data-type="name" required />
+                </div>
+
+                <h2 class="heading">Shipping information</h2>
+
+                <div class="form-group ">
+                    <label for="adress-shipping">Adress</label>
+                    <textarea name="adress-shipping" id="adress" cols="89" rows="6" data-type="adress"></textarea>
+                </div>
+
+
+                <div class="form-group ">
+                    <div class="form-group--city">
+                        <div class="form-group--city-left ">
+                            <div class="label-city">
+                                <label for="city">City</label>
+                            </div>
+                            <div class="country">
+                                <select id="select-country" data-type="country-drop_down">
+                                </select>
+                                <input type="text" name="city" id="city-autocomplete" placeholder="City" data-type="city"
+                                    required />
+                            </div>
+                        </div>
+
+                        <div class="form-group--city-right ">
+                            <label for="shipping-cost">Shipping cost</label>
+                            <input type="text" name="shipping-cost" id="shipping-cost" placeholder="Total"
+                                data-type="cost" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <h2 class="heading">Payment method</h2>
+
+                <div class="form-group">
+                    <label for="card-name">Card name</label>
+                    <input type="text" name="card-name" id="card-name" placeholder="Complete name" data-type="name"
+                        required />
+
+                </div>
+
+                <div class="form-group">
+                    <div class="form-group--card">
+                        <div class="form-group--card-left ">
+                            <div class="label-card">
+                                <label for="card-number">Card number</label>
+                            </div>
+                            <div class="input-card">
+                                <input type="tel" name="card-number" id="card-number" placeholder="Complete number"
+                                    data-type="nrcard" required />
+                            </div>
+                        </div>
+                        <div class="form-group--card-right ">
+                            <label for="card-cvv">CVV</label>
+                            <input type="tel" name="card-cvv" id="card-cvv" placeholder="Complete CVV" data-type="cvv"
+                                required />
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="bottom-text">
+                        <input type="checkbox" id="checkbox-terms" data-type="checkbox" required>
+                        Agree
+                        <a href="#"> terms </a> and
+                        <a href="#">conditions</a>
+
+                    </div>
+                </div>
+                <button type="submit" class="btn" id="submitbutton">Send</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.12.0/validate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"
+        integrity="sha256-JklDYODbg0X+8sPiKkcFURb5z7RvlNMIaE3RA2z97vw=" crossorigin="anonymous"></script>
+
+
+    
+    <script src="assets/js/api_autocomplete.js"></script>
+    <script src="assets/js/form_validate.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="app.js"></script>
+    
+
+</body>
+
+</html>

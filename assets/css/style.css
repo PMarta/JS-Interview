@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #344a72;
+    color: #fff;
+    line-height: 1.8;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+
+}
+
+h2 {
+   
+    padding: 0.5rem 0;
+    font-size: 2rem;
+
+}
+.heading {
+    margin-top: 1.5rem;
+}
+
+textarea {
+    width: 100%;
+    border: #ddd 0.1rem solid;
+    resize: none;
+    border-radius: 0.3rem;
+
+}
+#container {
+    max-width: 75rem;
+    padding: 2rem;
+    margin: 3rem auto;
+}
+
+.form-wrap {
+    background-color: #fff;
+    padding: 1.5rem 2.5rem;
+    color: #333;
+
+
+
+}
+
+.form-wrap .form-group {
+
+    margin-top: 1.5rem;
+
+}
+.form-wrap .form-group label {
+    display: block;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.form-wrap .form-group input {
+    width: 100%;
+    padding: 1rem;
+    border: #ddd 0.1rem solid;
+    border-radius: 0.3rem;
+
+}
+
+.form-wrap button {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+    background: #49c1a2;
+    padding: 1rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.form-wrap button:hover {
+    background-color: #37a08e;
+}
+
+.form-wrap .bottom-text {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+
+}
+
+/*--------- DROP-DOWN-LIST -------- */
+.ui-menu .ui-menu-item a,
+.ui-menu .ui-menu-item a.ui-state-hover,
+.ui-menu .ui-menu-item a.ui-state-active {
+    font-weight: normal;
+    margin: -0.6rem;
+    text-align: left;
+    font-size: 1.2rem;
+
+}
+
+.ui-autocomplete-loading {
+    background: white right center no-repeat;
+}
+
+
+/*-------CITY-DROP-DOWN-LIST-----------*/
+.form-group--city,.form-group--card {
+
+    text-align: left;
+    display: flex;
+}
+.form-group--city-left,.form-group--card-left {
+    flex: 2;
+    margin-right: 2rem;
+
+}
+.from-group--city-right {
+    
+    flex: 1;
+
+}
+
+.form-group--city-left .country {
+
+    display: flex;
+}
+
+
+
+select {
+    border: #ddd 0.1rem solid;
+    border-radius: 0.3rem;
+    height: 3.7rem;
+}
+
+
+
+/*----ERROR & SUCCESS ALERT----*/
+
+
+
+.error {
+    color: red;
+    font-size: 1.2rem;
+    resize: none;
+}
+
+.success {
+    color: green;
+    font-size: 1.2rem;
+
+}
