@@ -140,16 +140,17 @@ class FormValidate {
 
   }
   validateDropDown(element, objectUI) {
+    let city = document.getElementById('city-autocomplete');
     if (element.value == "") {
       objectUI.showAlert("Please choose your country ", "error", element.parentElement);
       document.getElementById('city-autocomplete').disabled = true;
     }
     element.addEventListener("change", function () {
+          city.value = "";
           objectUI.clearAlert(element.parentElement);
           objectUI.showAlert(`Please add your city from ${element.options[element.selectedIndex].text}`, "error", element.parentElement);
           document.getElementById('city-autocomplete').disabled = false;
     });
-    let city = document.getElementById('city-autocomplete');
     city.addEventListener("keyup", function () {
       objectUI.clearAlert(element.parentElement);
       objectUI.showAlert("It's a beautiful city", "success", element.parentElement);
